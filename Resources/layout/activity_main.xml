@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main"
+    android:id="@+id/relativeLayout1"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="300px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="432.0dp"
+            android:layout_weight="4"
+            android:id="@+id/linearLayout1">
+            <TextView
+                android:gravity="center_vertical"
+                android:text="Timer Game"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="40px"
+                android:textStyle="bold"
+                android:id="@+id/text" />
+            <ImageView
+                android:src="@drawable/pic1"
+                android:layout_width="match_parent"
+                android:layout_height="444.5dp"
+                android:id="@+id/imageView1" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:id="@+id/linearLayout2">
+            <Button
+                android:layout_width="100px"
+                android:text="Start"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12px"
+                android:id="@+id/ButtonStart"/>
+            <Button
+                android:layout_width="100px"
+                android:text="STOP"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" 
+                android:id="@+id/ButtonStop"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
